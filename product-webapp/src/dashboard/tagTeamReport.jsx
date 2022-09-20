@@ -51,7 +51,7 @@ export default function TagTeamReport(props) {
         //     });
 
         axios
-            .get(`https://pickmyslot.stackroute.io/interviewerservice/api/v1/interviewer/${year}/${month}`)
+            .get(`https://18.222.217.10:8080interviewerservice/api/v1/interviewer/${year}/${month}`)
             .then((resp) => {
                 setSlotsProvided(resp.data.alllist);
                 setSlotsBooked(resp.data.bookedslot);
@@ -64,7 +64,7 @@ export default function TagTeamReport(props) {
             });
 
             axios
-            .get(`https://pickmyslot.stackroute.io/tagservice/api/v1/tag/${year}/${month}/${tagTeamName}`)
+            .get(`https://18.222.217.10:8080tagservice/api/v1/tag/${year}/${month}/${tagTeamName}`)
             .then((resp) => {
                 setSlotsBookedByTeam(resp.data);
 
@@ -84,7 +84,7 @@ export default function TagTeamReport(props) {
 
         axios
             .get(
-                `https://pickmyslot.stackroute.io/interviewerservice/api/v1/interviewer/${year}/${month}`
+                `https://18.222.217.10:8080interviewerservice/api/v1/interviewer/${year}/${month}`
             )
             .then((resp) => {
                 if (resp.alllist > 0) {

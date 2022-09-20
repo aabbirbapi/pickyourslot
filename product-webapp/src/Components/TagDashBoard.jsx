@@ -31,7 +31,7 @@ function TagDashboard() {
   }
 
   function updatetag() {
-    axios.get(`https://pickmyslot.stackroute.io/tagservice/api/v1/tag/${emailId}`)
+    axios.get(`https://18.222.217.10:8080tagservice/api/v1/tag/${emailId}`)
     // axios.get(`http://localhost:3001/BookedSlots`)
     .then((response) => {
       //console.log(response);
