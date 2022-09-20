@@ -46,7 +46,7 @@ function TagCard(props) {
     };
 
     axios
-      .put(`https://18.222.217.10:8080tagservice/api/v1/updateBookedSlot`, data)
+      .put(`https://18.222.217.10:8080/tagservice/api/v1/updateBookedSlot`, data)
       // .patch(`http://localhost:3001/BookedSlots/${props.id}` , data)
       .then((response) => {
         props.senddata(response);

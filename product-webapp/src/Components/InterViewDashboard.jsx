@@ -34,7 +34,7 @@ function InterviewDashboard() {
   }
 
   function update() {
-   axios.get(`https://18.222.217.10:8080tagservice/api/v1/${emailId}`)
+   axios.get(`https://18.222.217.10:8080/tagservice/api/v1/${emailId}`)
     // axios.get(`http://localhost:3001/BookedSlots`)
     .then((response) => {
       //console.log(response);
