@@ -34,7 +34,7 @@ function Addslot(props)
             slotStatus: "Available"
         }
         console.log(startTime.value);
-        axios.post(`http://18.222.217.10:8080//interviewerservice/api/v1/newSlot`, newSlot)
+        axios.post(`http://18.222.217.10:8080/interviewerservice/api/v1/newSlot`, newSlot)
         .then(response => console.log(response));
 
         // window.location.reload();
